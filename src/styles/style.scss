@@ -1,8 +1,146 @@
-body {
-  margin: 0;
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+$fb-color: #3b5998;
+$fb-l-color: #4c7ccc;
+$border: 1px solid;
+
+* {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-h1 {
-  color: tomato;
+//body {
+//  background: url("../images/montagne.jpg") no-repeat;
+//  background-size: cover;
+//}
+
+.container {
+  margin-left: 82px;
+  margin-right: 82px;
+  margin-top: 33px;
 }
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 800;
+
+  .telephone {
+    position: relative;
+    right: 40px;
+
+    .fa-phone {
+      transform: scaleX(-1);
+      color: grey;
+    }
+  }
+
+  .facebook {
+    position: relative;
+
+    .fa-facebook-square {
+      color: $fb-color;
+      transform: scale(1.5);
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .phone {
+    color: grey;
+    position: relative;
+    left: 5px;
+    border-bottom: $border grey;
+  }
+
+  .fb {
+    color: $fb-l-color;
+    position: relative;
+    left: 5px;
+    border-bottom: $border $fb-l-color;
+  }
+}
+
+.header {
+  padding-top: 95px;
+  padding-left: 95px;
+  padding-right: 115px;
+  font-weight: 800;
+
+  ul {
+      display: flex;
+      justify-content: space-around;
+
+    li {
+        z-index: 2;
+        list-style: none;
+        font-size: 18px;
+        text-align: center;
+        line-height: 3px;
+        color: white;
+      }
+    }
+}
+.main-img {
+  max-height: 275px;
+  .img-header {
+    width: 100%;
+    position: relative;
+    top: -425px;
+  }
+
+  .masque-header {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    top: -600px;
+  }
+}
+.main-title {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 55%;
+  display: block;
+
+  h1 {
+    font-size: 75px;
+    position: relative;
+    color: white;
+    z-index: 3;
+  }
+  span {
+    position: relative;
+    top: -33px;
+    z-index: 4;
+    color: white;
+  }
+}
+
+.desc {
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 53%;
+
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    line-height: 45px;
+  }
+  p {
+    text-align: center;
+  }
+  b {
+    color: orange;
+  }
+}
+
+
+
+
+
 

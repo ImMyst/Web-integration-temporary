@@ -1,5 +1,107 @@
-body {
-  margin: 0; }
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif; }
 
-h1 {
-  color: tomato; }
+.container {
+  margin-left: 82px;
+  margin-right: 82px;
+  margin-top: 33px; }
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-weight: 800; }
+  .social .telephone {
+    position: relative;
+    right: 40px; }
+    .social .telephone .fa-phone {
+      -webkit-transform: scaleX(-1);
+              transform: scaleX(-1);
+      color: grey; }
+  .social .facebook {
+    position: relative; }
+    .social .facebook .fa-facebook-square {
+      color: #3b5998;
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5); }
+  .social a {
+    text-decoration: none; }
+  .social .phone {
+    color: grey;
+    position: relative;
+    left: 5px;
+    border-bottom: 1px solid grey; }
+  .social .fb {
+    color: #4c7ccc;
+    position: relative;
+    left: 5px;
+    border-bottom: 1px solid #4c7ccc; }
+
+.header {
+  padding-top: 95px;
+  padding-left: 95px;
+  padding-right: 115px;
+  font-weight: 800; }
+  .header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .header ul li {
+      z-index: 2;
+      list-style: none;
+      font-size: 18px;
+      text-align: center;
+      line-height: 3px;
+      color: white; }
+
+.main-img {
+  max-height: 275px; }
+  .main-img .img-header {
+    width: 100%;
+    position: relative;
+    top: -425px; }
+  .main-img .masque-header {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    top: -600px; }
+
+.main-title {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 55%;
+  display: block; }
+  .main-title h1 {
+    font-size: 75px;
+    position: relative;
+    color: white;
+    z-index: 3; }
+  .main-title span {
+    position: relative;
+    top: -33px;
+    z-index: 4;
+    color: white; }
+
+.desc {
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 53%; }
+  .desc h2 {
+    font-size: 40px;
+    text-align: center;
+    line-height: 45px; }
+  .desc p {
+    text-align: center; }
+  .desc b {
+    color: orange; }
