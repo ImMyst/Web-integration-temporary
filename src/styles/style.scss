@@ -126,10 +126,21 @@ $border: 1px solid;
   margin-left: auto;
   width: 53%;
 
+
+
   h2 {
     font-size: 40px;
     text-align: center;
     line-height: 45px;
+  }
+
+  .label-svg {
+    width: 150px;
+    height: 150px;
+    transform: rotate(-15deg);
+    position: absolute;
+    top: -50px;
+    z-index: -1;
   }
   p {
     text-align: center;

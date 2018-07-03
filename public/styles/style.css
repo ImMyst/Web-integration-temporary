@@ -101,6 +101,14 @@
     font-size: 40px;
     text-align: center;
     line-height: 45px; }
+  .desc .label-svg {
+    width: 150px;
+    height: 150px;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+    position: absolute;
+    top: -50px;
+    z-index: -1; }
   .desc p {
     text-align: center; }
   .desc b {
