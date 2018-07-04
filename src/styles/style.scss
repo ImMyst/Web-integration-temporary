@@ -2,6 +2,7 @@
 
 $fb-color: #3b5998;
 $fb-l-color: #4c7ccc;
+$p-color: #515e6e;
 $border: 1px solid;
 
 * {
@@ -86,36 +87,38 @@ $border: 1px solid;
     }
 }
 .main-img {
-  max-height: 275px;
+  max-height: 175px;
   .img-header {
     width: 100%;
     position: relative;
-    top: -425px;
+    top: -540px;
   }
 
   .masque-header {
     width: 100%;
     z-index: 2;
     position: relative;
-    top: -600px;
+    top: -690px;
   }
 }
 .main-title {
   text-align: center;
+  margin-top: 125px;
   margin-right: auto;
   margin-left: auto;
   width: 55%;
   display: block;
 
   h1 {
-    font-size: 75px;
+    font-size: 85px;
     position: relative;
     color: white;
     z-index: 3;
   }
   span {
+    font-size: 20px;
     position: relative;
-    top: -33px;
+    top: -40px;
     z-index: 4;
     color: white;
   }
@@ -128,28 +131,33 @@ $border: 1px solid;
   margin-left: auto;
   width: 53%;
 
-
-
   h2 {
+    position: relative;
+    z-index: 5;
     font-size: 40px;
     text-align: center;
     line-height: 45px;
+
+    b {
+      color: #d78400;
+    }
   }
 
   .label-svg {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     transform: rotate(-15deg);
     position: absolute;
-    top: -50px;
-    z-index: -1;
+    top: -70px;
+    left: -50px;
+    z-index: 4;
   }
   p {
+    font-weight: 600;
     text-align: center;
+    color: $p-color;
   }
-  b {
-    color: orange;
-  }
+
 }
 
 
