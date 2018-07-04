@@ -192,7 +192,39 @@ $border: 1px solid;
   }
 }
 
+.activities-title {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  text-align: center;
+  width: 70%;
+    h1 {
+      font-size: 175px;
+      color: $grey-color;
+    }
+}
 
+.activities {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+    .squares {
+      width: 350px;
+      height: 350px;
+      background-color: $blue-color;
+    }
+  .last-1 {
+    flex-basis: 500px;
+    height: 175px;
+  }
+  .last-2 {
+    flex-basis: 500px;
+    height: 175px;
+  }
+
+
+}
 
 
 
