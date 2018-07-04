@@ -37,6 +37,7 @@ $border: 1px solid;
 
   .facebook {
     position: relative;
+    right: 10px;
 
     .fa-facebook-square {
       color: $fb-color;
@@ -58,7 +59,7 @@ $border: 1px solid;
   .fb {
     color: $fb-l-color;
     position: relative;
-    left: 5px;
+    left: 10px;
     border-bottom: $border $fb-l-color;
   }
 }
@@ -74,12 +75,13 @@ $border: 1px solid;
       justify-content: space-around;
 
     li {
-        z-index: 2;
-        list-style: none;
-        font-size: 18px;
-        text-align: center;
-        line-height: 3px;
-        color: white;
+      z-index: 2;
+      list-style: none;
+      font-size: 18px;
+      text-align: center;
+      line-height: 3px;
+      color: white;
+      letter-spacing: 1px;
       }
     }
 }

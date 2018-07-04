@@ -25,7 +25,8 @@
               transform: scaleX(-1);
       color: grey; }
   .social .facebook {
-    position: relative; }
+    position: relative;
+    right: 10px; }
     .social .facebook .fa-facebook-square {
       color: #3b5998;
       -webkit-transform: scale(1.5);
@@ -40,7 +41,7 @@
   .social .fb {
     color: #4c7ccc;
     position: relative;
-    left: 5px;
+    left: 10px;
     border-bottom: 1px solid #4c7ccc; }
 
 .header {
@@ -60,7 +61,8 @@
       font-size: 18px;
       text-align: center;
       line-height: 3px;
-      color: white; }
+      color: white;
+      letter-spacing: 1px; }
 
 .main-img {
   max-height: 275px; }
