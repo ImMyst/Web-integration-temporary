@@ -3,6 +3,8 @@
 $fb-color: #3b5998;
 $fb-l-color: #4c7ccc;
 $p-color: #515e6e;
+$grey-color: #dadada;
+$blue-color: #2aaaa5;
 $border: 1px solid;
 
 * {
@@ -139,7 +141,7 @@ $border: 1px solid;
     line-height: 45px;
 
     b {
-      color: #d78400;
+      color: #d48734;
     }
   }
 
@@ -157,7 +159,37 @@ $border: 1px solid;
     text-align: center;
     color: $p-color;
   }
+}
 
+.sales {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  width: 53%;
+  text-align: center;
+  border: 5px solid #e0e0e0;
+
+  .first-sale {
+    line-height: 5px;
+  }
+  .second-sale {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    line-height: 5px;
+  }
+  h3 {
+    font-size: 25px;
+    color: $blue-color;
+  }
+  hr {
+    position: relative;
+    top: 24px;
+    width: 25%;
+    border: $border #e0e0e0;
+  }
+  span {
+    font-size: 14px;
+  }
 }
 
 
