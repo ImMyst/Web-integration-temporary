@@ -4,6 +4,9 @@
           box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif; }
 
+body {
+  overflow-x: hidden; }
+
 .container {
   margin-left: 82px;
   margin-right: 82px;
@@ -154,7 +157,9 @@
   text-align: center;
   width: 70%; }
   .activities-title h1 {
+    position: relative;
     font-size: 175px;
+    z-index: 0;
     color: #dadada; }
 
 .activities {
@@ -179,6 +184,7 @@
     background-color: #2aaaa5;
     text-align: center;
     position: relative;
+    z-index: 2;
     color: white; }
     .activities .squares .text {
       visibility: hidden;
@@ -203,3 +209,14 @@
     -ms-flex-preferred-size: 500px;
         flex-basis: 500px;
     height: 175px; }
+
+.map {
+  margin-top: -915px; }
+  .map img {
+    z-index: 2; }
+  .map iframe {
+    z-index: 0;
+    margin-left: -8px;
+    margin-top: -25px;
+    width: 101.1%;
+    height: 700px; }

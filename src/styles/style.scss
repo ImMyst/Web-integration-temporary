@@ -12,10 +12,9 @@ $border: 1px solid;
   font-family: "Source Sans Pro", sans-serif;
 }
 
-//body {
-//  background: url("../images/montagne.jpg") no-repeat;
-//  background-size: cover;
-//}
+body {
+  overflow-x: hidden;
+}
 
 .container {
   margin-left: 82px;
@@ -198,9 +197,11 @@ $border: 1px solid;
   margin-top: -65px;
   text-align: center;
   width: 70%;
-    h1 {
-      font-size: 175px;
-      color: $grey-color;
+  h1 {
+    position: relative;
+    font-size: 175px;
+    z-index: 0;
+    color: $grey-color;
     }
 }
 
@@ -217,7 +218,7 @@ $border: 1px solid;
       background-color: $blue-color;
       text-align: center;
       position: relative;
-
+      z-index: 2;
       color: white;
 
       .text {
@@ -249,9 +250,21 @@ $border: 1px solid;
     height: 175px;
   }
 
-
 }
 
+.map {
+  margin-top: -915px;
+  img{
+    z-index: 2;
+  }
+  iframe {
+    z-index: 0;
+    margin-left: -8px;
+    margin-top: -25px;
+    width: 101.1%;
+    height: 700px;
+  }
+}
 
 
 
