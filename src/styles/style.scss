@@ -245,16 +245,19 @@ body {
     visibility: visible;
     opacity: 1;
   }
-  .last-1 {
-    flex-basis: 500px;
+  .last-1, .last-2 {
+    width: 500px;
     height: 175px;
+    img {
+      width: 500px;
+      height: 175px;
+      margin-top: 40px;
+    }
   }
-  .last-2 {
-    flex-basis: 500px;
-    height: 175px;
   }
 
-}
+
+
 
 .map {
   margin-top: -915px;

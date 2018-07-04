@@ -203,14 +203,13 @@ body {
   .activities .squares:hover .text {
     visibility: visible;
     opacity: 1; }
-  .activities .last-1 {
-    -ms-flex-preferred-size: 500px;
-        flex-basis: 500px;
+  .activities .last-1, .activities .last-2 {
+    width: 500px;
     height: 175px; }
-  .activities .last-2 {
-    -ms-flex-preferred-size: 500px;
-        flex-basis: 500px;
-    height: 175px; }
+    .activities .last-1 img, .activities .last-2 img {
+      width: 500px;
+      height: 175px;
+      margin-top: 40px; }
 
 .map {
   margin-top: -915px; }
