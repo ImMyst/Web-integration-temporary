@@ -195,7 +195,7 @@ $border: 1px solid;
 .activities-title {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 50px;
+  margin-top: -65px;
   text-align: center;
   width: 70%;
     h1 {
@@ -206,14 +206,40 @@ $border: 1px solid;
 
 .activities {
   display: flex;
-  justify-content: space-evenly;
-  align-content: center;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  top: 50%;
+  transform: translateY(-34%);
     .squares {
       width: 350px;
       height: 350px;
       background-color: $blue-color;
+      text-align: center;
+      position: relative;
+
+      color: white;
+
+      .text {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.2s, visibility .2s;
+      }
+
+      img {
+        position: relative;
+        top: -157px;
+        z-index: 1;
+        width: 350px;
+        height: 350px;
+        opacity: 0.2;
+      }
     }
+
+  .squares:hover .text{
+    visibility: visible;
+    opacity: 1;
+  }
   .last-1 {
     flex-basis: 500px;
     height: 175px;
