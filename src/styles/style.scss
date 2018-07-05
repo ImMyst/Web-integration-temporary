@@ -261,23 +261,41 @@ html, body {
 
 .guide {
   display: flex;
-  padding-right: 300px;
-  padding-left: 300px;
-  justify-content: space-evenly;
+  padding-right: 429px;
+  padding-left: 440px;
+  padding-bottom: 115px;
   .image {
-
+    padding-right: 40px;
+    padding-top: 13px;
+    img {
+      transform: scale(1.05);
+      border-radius: 50%;
+    }
   }
   
   .text {
+    span {
+      position: relative;
+      top: 1px;
+      font-weight: bold;
+      font-size: 15px;
+      letter-spacing: 2px;
+      color: $orange;
+      border-bottom: $border $orange;
+    }
+
+    h2 {
+      font-size: 35px;
+    }
     a {
       text-decoration: none;
       button {
-        font-size: 18px;
+        font-size: 17px;
         font-weight: bold;
         color: white;
         background-color: $orange;
         border: none;
-        height: 50px;
+        height: 48px;
         width: 210px;
         border-radius: 35px;
         cursor: pointer;
@@ -297,12 +315,13 @@ html, body {
 
 .information {
   display: flex;
-  border-top: $border #eeeeee;
   height: 300px;
 
   .ancv {
     width: 809px;
     text-align: center;
+    border-top: $border #eeeeee;
+
     img {
       transform: scale(0.7);
     }

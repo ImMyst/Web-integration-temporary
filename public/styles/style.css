@@ -222,20 +222,35 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 300px;
-  padding-left: 300px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly; }
+  padding-right: 429px;
+  padding-left: 440px;
+  padding-bottom: 115px; }
+  .guide .image {
+    padding-right: 40px;
+    padding-top: 13px; }
+    .guide .image img {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
+      border-radius: 50%; }
+  .guide .text span {
+    position: relative;
+    top: 1px;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #d48734;
+    border-bottom: 1px solid #d48734; }
+  .guide .text h2 {
+    font-size: 35px; }
   .guide .text a {
     text-decoration: none; }
     .guide .text a button {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: bold;
       color: white;
       background-color: #d48734;
       border: none;
-      height: 50px;
+      height: 48px;
       width: 210px;
       border-radius: 35px;
       cursor: pointer;
@@ -252,11 +267,11 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-top: 1px solid #eeeeee;
   height: 300px; }
   .information .ancv {
     width: 809px;
-    text-align: center; }
+    text-align: center;
+    border-top: 1px solid #eeeeee; }
     .information .ancv img {
       -webkit-transform: scale(0.7);
               transform: scale(0.7); }
