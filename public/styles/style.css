@@ -218,6 +218,37 @@ html, body {
     width: 101.1%;
     height: 700px; }
 
+.information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #eeeeee;
+  height: 300px; }
+  .information .ancv {
+    width: 809px;
+    text-align: center; }
+    .information .ancv img {
+      -webkit-transform: scale(0.7);
+              transform: scale(0.7); }
+    .information .ancv .text {
+      position: relative;
+      top: -50px;
+      font-size: 20px;
+      padding-right: 150px;
+      padding-left: 137px; }
+  .information .message {
+    padding-top: 75px;
+    max-width: 1096px;
+    background-color: #eeeeee;
+    text-align: center;
+    padding-right: 85px;
+    padding-left: 85px;
+    line-height: 23px; }
+    .information .message span {
+      font-size: 20px;
+      font-weight: bold;
+      border-bottom: 1.5px solid #737373; }
+
 footer {
   background-color: #1e1e1e;
   color: #a7a7a7;
