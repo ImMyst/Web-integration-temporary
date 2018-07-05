@@ -219,25 +219,15 @@ body {
   .squares {
     width: 350px;
     height: 350px;
-    background-color: $blue-color;
     text-align: center;
     position: relative;
-    z-index: 2;
     color: white;
+    background: rgb(42, 170, 165) url("../images/canoe.jpg");
 
     .text {
       visibility: hidden;
       opacity: 0;
       transition: opacity 0.2s, visibility .2s;
-    }
-
-    img {
-      position: relative;
-      top: -157px;
-      z-index: 1;
-      width: 350px;
-      height: 350px;
-      opacity: 0.2;
     }
   }
 
@@ -246,6 +236,7 @@ body {
     opacity: 1;
   }
   .last-1, .last-2 {
+    display: inline-flex;
     width: 500px;
     height: 175px;
     img {
@@ -272,6 +263,5 @@ body {
     height: 700px;
   }
 }
-
 
 

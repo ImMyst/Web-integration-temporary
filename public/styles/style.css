@@ -183,27 +183,22 @@ body {
   .activities .squares {
     width: 350px;
     height: 350px;
-    background-color: #2aaaa5;
     text-align: center;
     position: relative;
-    z-index: 2;
-    color: white; }
+    color: white;
+    background: #2aaaa5 url("../images/canoe.jpg"); }
     .activities .squares .text {
       visibility: hidden;
       opacity: 0;
       -webkit-transition: opacity 0.2s, visibility .2s;
       transition: opacity 0.2s, visibility .2s; }
-    .activities .squares img {
-      position: relative;
-      top: -157px;
-      z-index: 1;
-      width: 350px;
-      height: 350px;
-      opacity: 0.2; }
   .activities .squares:hover .text {
     visibility: visible;
     opacity: 1; }
   .activities .last-1, .activities .last-2 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     width: 500px;
     height: 175px; }
     .activities .last-1 img, .activities .last-2 img {
