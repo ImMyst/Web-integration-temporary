@@ -1,11 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-
-$fb-color: #3b5998;
-$fb-l-color: #4c7ccc;
-$p-color: #515e6e;
-$grey-color: #dadada;
-$blue-color: #2aaaa5;
-$border: 1px solid;
+@import "variables";
 
 * {
   font-family: "Source Sans Pro", sans-serif;
@@ -146,7 +139,7 @@ html, body {
     line-height: 45px;
 
     b {
-      color: #d48734;
+      color: $orange;
     }
   }
 
@@ -265,6 +258,8 @@ html, body {
     height: 700px;
   }
 }
+
+
 
 .information {
   display: flex;
