@@ -166,6 +166,8 @@ html, body {
   width: 53%;
   text-align: center;
   border: 5px solid #e0e0e0;
+  position: relative;
+  z-index: 3;
 
   .first-sale {
     line-height: 5px;
@@ -199,13 +201,15 @@ html, body {
   h1 {
     position: relative;
     font-size: 175px;
-    z-index: 0;
+    z-index: 2;
     color: $grey-color;
   }
 }
 
 .activities {
   display: flex;
+  position: relative;
+  z-index: 3;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
@@ -244,21 +248,27 @@ html, body {
 
 
 
-
 .map {
-  margin-top: -915px;
-  padding-bottom: 200px;
-  img{
-    z-index: 2;
+  padding-bottom: 100px;
+  .masque-top{
+    width: 104%;
+    height: 1110px;
+    position: absolute;
+    margin-top: -1030px;
+    z-index: 1;
   }
   iframe {
     z-index: 1;
     margin-left: -8px;
-    margin-top: -100px;
     width: 101.1%;
-    height: 700px;
+    height: 1000px;
+  }
+  .masque-bottom {
+    position: relative;
+    top: -95px;
   }
 }
+
 
 .guide {
   display: flex;

@@ -135,7 +135,9 @@ html, body {
   margin-top: 100px;
   width: 53%;
   text-align: center;
-  border: 5px solid #e0e0e0; }
+  border: 5px solid #e0e0e0;
+  position: relative;
+  z-index: 3; }
   .sales .first-sale {
     line-height: 5px; }
   .sales .second-sale {
@@ -162,13 +164,15 @@ html, body {
   .activities-title h1 {
     position: relative;
     font-size: 175px;
-    z-index: 0;
+    z-index: 2;
     color: #dadada; }
 
 .activities {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  z-index: 3;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -208,16 +212,21 @@ html, body {
       margin-top: 40px; }
 
 .map {
-  margin-top: -915px;
-  padding-bottom: 200px; }
-  .map img {
-    z-index: 2; }
+  padding-bottom: 100px; }
+  .map .masque-top {
+    width: 104%;
+    height: 1110px;
+    position: absolute;
+    margin-top: -1030px;
+    z-index: 1; }
   .map iframe {
     z-index: 1;
     margin-left: -8px;
-    margin-top: -100px;
     width: 101.1%;
-    height: 700px; }
+    height: 1000px; }
+  .map .masque-bottom {
+    position: relative;
+    top: -95px; }
 
 .guide {
   display: -webkit-box;
