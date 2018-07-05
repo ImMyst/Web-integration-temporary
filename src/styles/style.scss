@@ -8,12 +8,14 @@ $blue-color: #2aaaa5;
 $border: 1px solid;
 
 * {
-  box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
 }
 
-body {
+html, body {
   overflow-x: hidden;
+  margin:0;
+  padding:0;
+  min-width: 1140px;
 }
 
 .container {
@@ -264,4 +266,36 @@ body {
   }
 }
 
+
+footer {
+  background-color: #1e1e1e;
+  color: #a7a7a7;
+  text-align: center;
+  height: 156px;
+  .text {
+    padding-top: 25px;
+    font-weight: bold;
+    line-height: 8px;
+  }
+  nav {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    width: 19%;
+
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        color: white;
+        border-bottom: 2px solid #737373;
+
+      }
+    }
+  }
+}
 

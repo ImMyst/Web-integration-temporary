@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif; }
 
-body {
-  overflow-x: hidden; }
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  min-width: 1140px; }
 
 .container {
   margin-left: 82px;
@@ -216,3 +217,31 @@ body {
     margin-top: -100px;
     width: 101.1%;
     height: 700px; }
+
+footer {
+  background-color: #1e1e1e;
+  color: #a7a7a7;
+  text-align: center;
+  height: 156px; }
+  footer .text {
+    padding-top: 25px;
+    font-weight: bold;
+    line-height: 8px; }
+  footer nav {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    width: 19%; }
+    footer nav ul {
+      list-style: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      footer nav ul a {
+        text-decoration: none;
+        color: white;
+        border-bottom: 2px solid #737373; }
