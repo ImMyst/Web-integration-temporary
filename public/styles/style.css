@@ -218,6 +218,36 @@ html, body {
     width: 101.1%;
     height: 700px; }
 
+.guide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 300px;
+  padding-left: 300px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+  .guide .text a {
+    text-decoration: none; }
+    .guide .text a button {
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      background-color: #d48734;
+      border: none;
+      height: 50px;
+      width: 210px;
+      border-radius: 35px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.2s;
+              transition-duration: 0.2s; }
+    .guide .text a :hover {
+      background-color: #e18b3b;
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
+    .guide .text a :active {
+      background-color: #c27931; }
+
 .information {
   display: -webkit-box;
   display: -ms-flexbox;

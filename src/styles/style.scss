@@ -259,7 +259,41 @@ html, body {
   }
 }
 
+.guide {
+  display: flex;
+  padding-right: 300px;
+  padding-left: 300px;
+  justify-content: space-evenly;
+  .image {
 
+  }
+  
+  .text {
+    a {
+      text-decoration: none;
+      button {
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background-color: $orange;
+        border: none;
+        height: 50px;
+        width: 210px;
+        border-radius: 35px;
+        cursor: pointer;
+        transition-duration: 0.2s;
+      }
+      :hover {
+        background-color: $orange-hover;
+        transform: scale(1.1);
+      }
+      :active {
+        background-color: $orange-active;
+      }
+    }
+
+  }
+}
 
 .information {
   display: flex;
