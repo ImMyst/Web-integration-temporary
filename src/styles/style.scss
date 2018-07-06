@@ -229,6 +229,11 @@ html, body {
     }
     &:nth-child(3) {
       background: rgb(42, 170, 165) url("../images/aquatic.jpg");
+
+    }
+    .title {
+      margin-left: 50px;
+      margin-right: 50px;
     }
     .content {
       padding-top: 147px;
@@ -237,6 +242,10 @@ html, body {
       padding-right: 20px;
       margin: 10px;
       border: 2px solid $blue-color;
+      &:nth-child(3) {
+        padding-top: 120px;
+
+      }
 
       .text {
         visibility: hidden;
