@@ -209,7 +209,7 @@ html, body {
   display: flex;
   position: relative;
   z-index: 3;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-flow: row wrap;
   top: 50%;
@@ -220,6 +220,7 @@ html, body {
     text-align: center;
     position: relative;
     color: white;
+    font-size: 20px;
     &:nth-child(1) {
       background: rgb(42, 170, 165) url("../images/canoe.jpg");
     }
@@ -230,40 +231,60 @@ html, body {
       background: rgb(42, 170, 165) url("../images/aquatic.jpg");
     }
     .content {
-      padding-top: 125px;
-      padding-bottom: 43px;
+      padding-top: 147px;
+      padding-bottom: 7px;
+      padding-left: 20px;
+      padding-right: 20px;
       margin: 10px;
       border: 2px solid $blue-color;
-    
+
       .text {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.2s, visibility .2s;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .squares:hover .text {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .last-1, .last-2 {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    .content-large {
+      padding-top: 23px;
+      margin: 10px;
+      border: 2px solid $blue-color;
+      .text {
+        font-size: 15px;
         visibility: hidden;
         opacity: 0;
         transition: opacity 0.2s, visibility .2s;
       }
     }
-
-  }
-
-  .squares:hover .text{
-    visibility: visible;
-    opacity: 1;
   }
   .last-1 {
-    background: rgb(42, 170, 165) url("../images/week-end.jpg");
+    background: rgb(42, 170, 165) url("../images/week-end.jpg") no-repeat;
+    &:hover .text {
+      visibility: visible;
+      opacity: 1;
+    }
   }
   .last-2 {
-    background: rgb(42, 170, 165) url("../images/climbing.jpg");
+    background: rgb(42, 170, 165) url("../images/climbing.jpg") no-repeat;
+    &:hover .text {
+      visibility: visible;
+      opacity: 1;
+    }
   }
-  .last-1, .last-2 {
-    display: inline-flex;
-    width: 500px;
-    height: 175px;
-  }
+
 
 }
-
-
-
 .map {
   padding-bottom: 100px;
   .masque-top{
