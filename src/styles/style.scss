@@ -221,29 +221,36 @@ html, body {
     position: relative;
     color: white;
     background: rgb(42, 170, 165) url("../images/canoe.jpg");
-
-    .text {
-      visibility: hidden;
-      opacity: 0;
-      transition: opacity 0.2s, visibility .2s;
+    
+    .content {
+      padding-top: 125px;
+      padding-bottom: 43px;
+      margin: 10px;
+      border: 2px solid $blue-color;
+    
+      .text {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.2s, visibility .2s;
+      }
     }
+
   }
 
   .squares:hover .text{
     visibility: visible;
     opacity: 1;
   }
+  .last-1 {
+    background: rgb(42, 170, 165) url("../images/week-end.jpg");
+  }
   .last-1, .last-2 {
     display: inline-flex;
     width: 500px;
     height: 175px;
-    img {
-      width: 500px;
-      height: 175px;
-      margin-top: 40px;
-    }
   }
-  }
+
+}
 
 
 
