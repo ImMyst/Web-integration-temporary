@@ -208,21 +208,21 @@ html, body {
 .activities {
   display: flex;
   position: relative;
+  padding-top: 65px;
   z-index: 3;
   justify-content: space-evenly;
   align-items: center;
   flex-flow: row wrap;
-  top: 50%;
   transform: translateY(-34%);
   .squares {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     text-align: center;
     position: relative;
     color: white;
     font-size: 20px;
     &:nth-child(1) {
-      background: rgb(42, 170, 165) url("../images/canoe.jpg");
+      background: rgb(42, 170, 165) url("../images/canoe.jpg") no-repeat;
     }
     &:nth-child(2) {
       background: rgb(42, 170, 165) url("../images/via-ferrata.jpg");
@@ -243,7 +243,7 @@ html, body {
       margin: 10px;
       border: 2px solid $blue-color;
       &:nth-child(3) {
-        padding-top: 120px;
+        padding-top: 100px;
 
       }
 
@@ -263,8 +263,9 @@ html, body {
 
   .last-1, .last-2 {
     position: relative;
-    width: 500px;
-    height: 200px;
+    width: 620px;
+    height: 210px;
+    margin-top: 35px;
     .content-large {
       padding-top: 23px;
       margin: 10px;
@@ -298,9 +299,9 @@ html, body {
   padding-bottom: 100px;
   .masque-top{
     width: 104%;
-    height: 1110px;
+    height: 1345px;
     position: absolute;
-    margin-top: -1030px;
+    margin-top: -1250px;
     z-index: 1;
   }
   iframe {
