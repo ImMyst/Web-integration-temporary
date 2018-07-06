@@ -189,8 +189,13 @@ html, body {
     height: 350px;
     text-align: center;
     position: relative;
-    color: white;
-    background: #2aaaa5 url("../images/canoe.jpg"); }
+    color: white; }
+    .activities .squares:nth-child(1) {
+      background: #2aaaa5 url("../images/canoe.jpg"); }
+    .activities .squares:nth-child(2) {
+      background: #2aaaa5 url("../images/via-ferrata.jpg"); }
+    .activities .squares:nth-child(3) {
+      background: #2aaaa5 url("../images/aquatic.jpg"); }
     .activities .squares .content {
       padding-top: 125px;
       padding-bottom: 43px;
@@ -206,6 +211,8 @@ html, body {
     opacity: 1; }
   .activities .last-1 {
     background: #2aaaa5 url("../images/week-end.jpg"); }
+  .activities .last-2 {
+    background: #2aaaa5 url("../images/climbing.jpg"); }
   .activities .last-1, .activities .last-2 {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;

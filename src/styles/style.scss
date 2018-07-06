@@ -220,8 +220,15 @@ html, body {
     text-align: center;
     position: relative;
     color: white;
-    background: rgb(42, 170, 165) url("../images/canoe.jpg");
-    
+    &:nth-child(1) {
+      background: rgb(42, 170, 165) url("../images/canoe.jpg");
+    }
+    &:nth-child(2) {
+      background: rgb(42, 170, 165) url("../images/via-ferrata.jpg");
+    }
+    &:nth-child(3) {
+      background: rgb(42, 170, 165) url("../images/aquatic.jpg");
+    }
     .content {
       padding-top: 125px;
       padding-bottom: 43px;
@@ -243,6 +250,9 @@ html, body {
   }
   .last-1 {
     background: rgb(42, 170, 165) url("../images/week-end.jpg");
+  }
+  .last-2 {
+    background: rgb(42, 170, 165) url("../images/climbing.jpg");
   }
   .last-1, .last-2 {
     display: inline-flex;
