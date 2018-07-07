@@ -215,6 +215,10 @@ html, body {
       background: url("../images/via-ferrata.jpg"); }
     .activities__suggested .activities__suggested--squares:nth-child(3) {
       background: url("../images/aquatic.jpg"); }
+      .activities__suggested .activities__suggested--squares:nth-child(3) h3 {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-top: 0px; }
     .activities__suggested .activities__suggested--squares .activities__suggested--squares-content {
       padding: 147px 20px 57px;
       margin: 10px;

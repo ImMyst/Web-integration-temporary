@@ -243,6 +243,11 @@ html, body {
     }
     &:nth-child(3) {
       background: url("../images/aquatic.jpg");
+      h3 {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-top: 0px;
+    }
 
     }
 
