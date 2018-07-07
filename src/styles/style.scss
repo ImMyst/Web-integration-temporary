@@ -50,14 +50,24 @@ html, body {
     color: grey;
     position: relative;
     left: 5px;
-    border-bottom: $border grey;
+    box-shadow: inset 0 -1px 0 0 grey;
+    transition: .2s;
+    &:hover {
+      box-shadow: inset 0 -22px 0 0 grey;
+      color: white;
+    }
   }
 
   .fb {
     color: $fb-l-color;
     position: relative;
     left: 10px;
-    border-bottom: $border $fb-l-color;
+    box-shadow: inset 0 -1px 0 0 $fb-l-color;
+    transition: .2s;
+    &:hover {
+      box-shadow: inset 0 -22px 0 0 $fb-l-color;
+      color: white;
+    }
   }
 }
 
@@ -489,7 +499,11 @@ footer {
       a {
         text-decoration: none;
         color: white;
-        border-bottom: 2px solid #737373;
+        box-shadow: inset 0 -2px 0 0 #737373;
+        transition: .2s;
+        &:hover {
+          box-shadow: inset 0 -22px 0 0 #737373;
+        }
       }
     }
   }
