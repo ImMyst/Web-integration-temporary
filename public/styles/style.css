@@ -210,17 +210,30 @@ html, body {
       border: 2px solid #2aaaa5; }
       .activities .squares .content:nth-child(3) {
         padding-top: 100px; }
+      .activities .squares .content .title {
+        transition: -webkit-transform .2s; }
       .activities .squares .content .text {
         visibility: hidden;
         opacity: 0;
-        -webkit-transition: opacity 0.2s, visibility .2s;
-        transition: opacity 0.2s, visibility .2s;
+        transition: opacity .2s, visibility .2s, -webkit-transform .2s;
         font-size: 15px;
         padding-left: 23px;
         padding-right: 23px; }
+      .activities .squares .content i {
+        position: relative;
+        top: -55px;
+        transition: -webkit-transform .2s; }
   .activities .squares:hover .text {
     visibility: visible;
-    opacity: 1; }
+    opacity: 1;
+    -webkit-transform: translateY(-5.75em);
+            transform: translateY(-5.75em); }
+  .activities .squares:hover .title {
+    -webkit-transform: translateY(-3.75em);
+            transform: translateY(-3.75em); }
+  .activities .squares:hover i {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px); }
   .activities .last-1, .activities .last-2 {
     position: relative;
     width: 620px;
@@ -232,14 +245,19 @@ html, body {
       padding-left: 20px;
       margin: 10px;
       border: 2px solid #2aaaa5; }
+      .activities .last-1 .content-large .title, .activities .last-2 .content-large .title {
+        transition: -webkit-transform .2s; }
       .activities .last-1 .content-large .text, .activities .last-2 .content-large .text {
         font-size: 15px;
         visibility: hidden;
         opacity: 0;
-        -webkit-transition: opacity 0.2s, visibility .2s;
-        transition: opacity 0.2s, visibility .2s;
+        transition: opacity .2s, visibility .2s, -webkit-transform .2s;
         padding-left: 23px;
         padding-right: 23px; }
+      .activities .last-1 .content-large i, .activities .last-2 .content-large i {
+        position: relative;
+        top: -55px;
+        transition: -webkit-transform .2s; }
       .activities .last-1 .content-large .top-svg, .activities .last-2 .content-large .top-svg {
         position: absolute;
         z-index: 3;
@@ -256,12 +274,28 @@ html, body {
     background: #2aaaa5 url("../images/week-end.jpg") no-repeat; }
     .activities .last-1:hover .text {
       visibility: visible;
-      opacity: 1; }
+      opacity: 1;
+      -webkit-transform: translateY(-1.5em);
+              transform: translateY(-1.5em); }
   .activities .last-2 {
     background: #2aaaa5 url("../images/climbing.jpg") no-repeat; }
     .activities .last-2:hover .text {
       visibility: visible;
-      opacity: 1; }
+      opacity: 1;
+      -webkit-transform: translateY(-1.5em);
+              transform: translateY(-1.5em); }
+  .activities .last-1:hover .title {
+    -webkit-transform: translateY(-1em);
+            transform: translateY(-1em); }
+  .activities .last-1:hover i {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px); }
+  .activities .last-2:hover .title {
+    -webkit-transform: translateY(-1em);
+            transform: translateY(-1em); }
+  .activities .last-2:hover i {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px); }
 
 .map {
   padding-bottom: 135px; }
