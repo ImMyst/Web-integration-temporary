@@ -191,13 +191,15 @@ html, body {
     text-align: center;
     position: relative;
     color: white;
-    font-size: 20px; }
+    font-size: 20px;
+    -webkit-box-shadow: inset 0 0 0 1000px rgba(3, 122, 117, 0.8);
+            box-shadow: inset 0 0 0 1000px rgba(3, 122, 117, 0.8); }
     .activities .squares:nth-child(1) {
-      background: #2aaaa5 url("../images/canoe.jpg") no-repeat; }
+      background: url("../images/canoe.jpg") no-repeat; }
     .activities .squares:nth-child(2) {
-      background: #2aaaa5 url("../images/via-ferrata.jpg"); }
+      background: url("../images/via-ferrata.jpg"); }
     .activities .squares:nth-child(3) {
-      background: #2aaaa5 url("../images/aquatic.jpg"); }
+      background: url("../images/aquatic.jpg"); }
     .activities .squares .title {
       margin-left: 50px;
       margin-right: 50px; }

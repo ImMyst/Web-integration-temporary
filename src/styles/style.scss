@@ -221,14 +221,15 @@ html, body {
     position: relative;
     color: white;
     font-size: 20px;
+    box-shadow: inset 0 0 0 1000px $squares-color;
     &:nth-child(1) {
-      background: rgb(42, 170, 165) url("../images/canoe.jpg") no-repeat;
+      background: url("../images/canoe.jpg") no-repeat;
     }
     &:nth-child(2) {
-      background: rgb(42, 170, 165) url("../images/via-ferrata.jpg");
+      background: url("../images/via-ferrata.jpg");
     }
     &:nth-child(3) {
-      background: rgb(42, 170, 165) url("../images/aquatic.jpg");
+      background: url("../images/aquatic.jpg");
 
     }
     .title {
