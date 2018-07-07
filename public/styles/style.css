@@ -335,14 +335,14 @@ html, body {
   padding-right: 429px;
   padding-left: 440px;
   padding-bottom: 115px; }
-  .guide .image {
+  .guide .guide--image {
     padding-right: 40px;
     padding-top: 13px; }
-    .guide .image img {
+    .guide .guide--image img {
       -webkit-transform: scale(1.05);
               transform: scale(1.05);
       border-radius: 50%; }
-  .guide .text span {
+  .guide .guide--content span {
     position: relative;
     top: 1px;
     font-weight: bold;
@@ -350,13 +350,13 @@ html, body {
     letter-spacing: 2px;
     color: #d48734;
     border-bottom: 1px solid #d48734; }
-  .guide .text h2 {
+  .guide .guide--content h2 {
     font-size: 35px; }
-  .guide .text p {
+  .guide .guide--content p {
     line-height: 23px; }
-  .guide .text a {
+  .guide .guide--content a {
     text-decoration: none; }
-    .guide .text a button {
+    .guide .guide--content a button {
       font-size: 17px;
       font-weight: bold;
       color: white;
@@ -368,11 +368,11 @@ html, body {
       cursor: pointer;
       -webkit-transition-duration: 0.2s;
               transition-duration: 0.2s; }
-    .guide .text a :hover {
+    .guide .guide--content a :hover {
       background-color: #e18b3b;
       -webkit-transform: scale(1.1);
               transform: scale(1.1); }
-    .guide .text a :active {
+    .guide .guide--content a :active {
       background-color: #c27931; }
 
 .information {
@@ -380,20 +380,20 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   height: 300px; }
-  .information .ancv {
+  .information .information--ancv {
     width: 809px;
     text-align: center;
     border-top: 1px solid #eeeeee; }
-    .information .ancv img {
+    .information .information--ancv img {
       -webkit-transform: scale(0.7);
               transform: scale(0.7); }
-    .information .ancv .text {
+    .information .information--ancv p {
       position: relative;
       top: -50px;
       font-size: 20px;
       padding-right: 150px;
       padding-left: 137px; }
-  .information .message {
+  .information .information--content {
     padding-top: 75px;
     max-width: 1096px;
     background-color: #eeeeee;
@@ -401,11 +401,11 @@ html, body {
     padding-right: 85px;
     padding-left: 85px;
     line-height: 23px; }
-    .information .message span {
+    .information .information--content span {
       font-size: 20px;
       font-weight: bold;
       border-bottom: 1.5px solid #737373; }
-    .information .message .text {
+    .information .information--content p {
       line-height: 23px; }
 
 footer {
@@ -413,7 +413,7 @@ footer {
   color: #a7a7a7;
   text-align: center;
   height: 156px; }
-  footer .text {
+  footer .footer--content {
     padding-top: 25px;
     font-weight: bold;
     line-height: 8px; }
