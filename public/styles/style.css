@@ -126,7 +126,8 @@ html, body {
     z-index: 4; }
   .desc p {
     font-weight: 600;
-    text-align: center; }
+    text-align: center;
+    line-height: 23px; }
 
 .sales {
   margin-right: auto;
@@ -193,7 +194,8 @@ html, body {
     color: white;
     font-size: 20px;
     -webkit-box-shadow: inset 0 0 0 1000px rgba(3, 122, 117, 0.8);
-            box-shadow: inset 0 0 0 1000px rgba(3, 122, 117, 0.8); }
+            box-shadow: inset 0 0 0 1000px rgba(3, 122, 117, 0.8);
+    cursor: pointer; }
     .activities .squares:nth-child(1) {
       background: url("../images/canoe.jpg") no-repeat; }
     .activities .squares:nth-child(2) {
@@ -214,7 +216,9 @@ html, body {
         opacity: 0;
         -webkit-transition: opacity 0.2s, visibility .2s;
         transition: opacity 0.2s, visibility .2s;
-        font-size: 15px; }
+        font-size: 15px;
+        padding-left: 23px;
+        padding-right: 23px; }
   .activities .squares:hover .text {
     visibility: visible;
     opacity: 1; }
@@ -225,6 +229,8 @@ html, body {
     margin-top: 35px; }
     .activities .last-1 .content-large, .activities .last-2 .content-large {
       padding-top: 32px;
+      padding-right: 20px;
+      padding-left: 20px;
       margin: 10px;
       border: 2px solid #2aaaa5; }
       .activities .last-1 .content-large .text, .activities .last-2 .content-large .text {
@@ -232,7 +238,9 @@ html, body {
         visibility: hidden;
         opacity: 0;
         -webkit-transition: opacity 0.2s, visibility .2s;
-        transition: opacity 0.2s, visibility .2s; }
+        transition: opacity 0.2s, visibility .2s;
+        padding-left: 23px;
+        padding-right: 23px; }
       .activities .last-1 .content-large .top-svg, .activities .last-2 .content-large .top-svg {
         position: absolute;
         z-index: 3;
@@ -243,8 +251,8 @@ html, body {
         top: -15px;
         right: -15px;
         border-radius: 50%;
-        -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
-                box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2); }
+        -webkit-box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.2);
+                box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.2); }
   .activities .last-1 {
     background: #2aaaa5 url("../images/week-end.jpg") no-repeat; }
     .activities .last-1:hover .text {
@@ -257,12 +265,12 @@ html, body {
       opacity: 1; }
 
 .map {
-  padding-bottom: 100px; }
+  padding-bottom: 135px; }
   .map .masque-top {
     width: 104%;
-    height: 1345px;
+    height: 1180px;
     position: absolute;
-    margin-top: -1347px;
+    margin-top: -1192px;
     z-index: 1; }
   .map iframe {
     z-index: 1;
@@ -298,6 +306,8 @@ html, body {
     border-bottom: 1px solid #d48734; }
   .guide .text h2 {
     font-size: 35px; }
+  .guide .text p {
+    line-height: 23px; }
   .guide .text a {
     text-decoration: none; }
     .guide .text a button {
@@ -349,6 +359,8 @@ html, body {
       font-size: 20px;
       font-weight: bold;
       border-bottom: 1.5px solid #737373; }
+    .information .message .text {
+      line-height: 23px; }
 
 footer {
   background-color: #1e1e1e;
