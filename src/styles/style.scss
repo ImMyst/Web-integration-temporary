@@ -180,10 +180,10 @@ html, body {
   position: relative;
   z-index: 3;
 
-  .first-sale {
+  .sales--top {
     line-height: 5px;
   }
-  .second-sale {
+  .sales--bottom {
     padding-top: 15px;
     padding-bottom: 25px;
     line-height: 5px;
@@ -203,7 +203,7 @@ html, body {
   }
 }
 
-.activities-title {
+.activities__title {
   margin-right: auto;
   margin-left: auto;
   margin-top: -65px;
@@ -217,7 +217,7 @@ html, body {
   }
 }
 
-.activities {
+.activities__suggested {
   display: flex;
   position: relative;
   padding-top: 65px;
@@ -226,7 +226,7 @@ html, body {
   align-items: center;
   flex-flow: row wrap;
   transform: translateY(-34%);
-  .squares {
+  .activities__suggested--squares {
     width: 400px;
     height: 400px;
     text-align: center;
@@ -245,21 +245,21 @@ html, body {
       background: url("../images/aquatic.jpg");
 
     }
-    .title {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-    .content {
+
+    .activities__suggested--squares-content {
       padding: 147px 20px 57px;
       margin: 10px;
       border: 2px solid $blue-color;
+      h3 {
+        margin-left: 50px;
+        margin-right: 50px;
+        transition: -webkit-transform .2s;
+      }
       &:nth-child(3) {
         padding-top: 100px;
       }
-      .title {
-        transition: -webkit-transform .2s;
-      }
-      .text {
+
+      p {
         visibility: hidden;
         opacity: 0;
         transition: opacity .2s, visibility .2s, -webkit-transform .2s;
@@ -273,35 +273,36 @@ html, body {
         transition: -webkit-transform .2s;
       }
     }
+    &:hover p {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-5.75em);
+    }
+    &:hover h3 {
+      transform: translateY(-3.75em);
+    }
+    &:hover i {
+      transform: translateY(15px);
+    }
   }
 
-  .squares:hover .text {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(-5.75em);
-  }
-  .squares:hover .title {
-    transform: translateY(-3.75em);
-  }
-  .squares:hover i {
-    transform: translateY(15px);
-  }
 
-  .last-1, .last-2 {
+
+  .activities__suggested--rectangle-1, .activities__suggested--rectangle-2 {
     position: relative;
     width: 620px;
     height: 210px;
     margin-top: 35px;
-    .content-large {
+    .activities__suggested--rectangle-content {
       padding-top: 32px;
       padding-right: 20px;
       padding-left: 20px;
       margin: 10px;
       border: 2px solid $blue-color;
-      .title {
+      h3 {
         transition: -webkit-transform .2s;
       }
-      .text {
+      p {
         font-size: 15px;
         visibility: hidden;
         opacity: 0;
@@ -314,7 +315,7 @@ html, body {
         top: -55px;
         transition: -webkit-transform .2s;
       }
-      .top-svg {
+      .activities__suggested--rectangle-content-svg {
         position: absolute;
         z-index: 3;
         width: 125px;
@@ -327,38 +328,38 @@ html, body {
       }
     }
   }
-  .last-1 {
+  .activities__suggested--rectangle-1 {
     background: rgb(42, 170, 165) url("../images/week-end.jpg") no-repeat;
-    &:hover .text {
+    &:hover p {
       visibility: visible;
       opacity: 1;
       transform: translateY(-1.5em);
     }
+    &:hover h3 {
+      transform: translateY(-1em);
+    }
+    &:hover i {
+      transform: translateY(30px);
+    }
   }
-  .last-2 {
+  .activities__suggested--rectangle-2 {
     background: rgb(42, 170, 165) url("../images/climbing.jpg") no-repeat;
-    &:hover .text {
+    &:hover p {
       visibility: visible;
       opacity: 1;
       transform: translateY(-1.5em);
     }
-  }
-  .last-1:hover .title {
-    transform: translateY(-1em);
-  }
-  .last-1:hover i {
-    transform: translateY(30px);
-  }
-  .last-2:hover .title {
-    transform: translateY(-1em);
-  }
-  .last-2:hover i {
-    transform: translateY(30px);
+    &:hover h3 {
+      transform: translateY(-1em);
+    }
+    &:hover i {
+      transform: translateY(30px);
+    }
   }
 }
 .map {
   padding-bottom: 135px;
-  .masque-top{
+  .map--masque-top{
     width: 104%;
     height: 1180px;
     position: absolute;
@@ -372,7 +373,7 @@ html, body {
     height: 1000px;
     margin-top: -100px;
   }
-  .masque-bottom {
+  .map--masque-bottom {
     position: relative;
     top: -95px;
   }
