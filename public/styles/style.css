@@ -13,7 +13,7 @@ html, body {
   margin-right: 82px;
   margin-top: 33px; }
 
-.social {
+.header__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,23 +21,23 @@ html, body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   font-weight: 800; }
-  .social .telephone {
+  .header__social .header__social--telephone {
     position: relative;
     right: 40px; }
-    .social .telephone .fa-phone {
+    .header__social .header__social--telephone .fa-phone {
       -webkit-transform: scaleX(-1);
               transform: scaleX(-1);
       color: grey; }
-  .social .facebook {
+  .header__social .header__social--facebook {
     position: relative;
     right: 10px; }
-    .social .facebook .fa-facebook-square {
+    .header__social .header__social--facebook .fa-facebook-square {
       color: #3b5998;
       -webkit-transform: scale(1.5);
               transform: scale(1.5); }
-  .social a {
+  .header__social a {
     text-decoration: none; }
-  .social .phone {
+  .header__social .header__social--telephone-link {
     color: grey;
     position: relative;
     left: 5px;
@@ -45,11 +45,11 @@ html, body {
             box-shadow: inset 0 -1px 0 0 grey;
     -webkit-transition: .2s;
     transition: .2s; }
-    .social .phone:hover {
+    .header__social .header__social--telephone-link:hover {
       -webkit-box-shadow: inset 0 -22px 0 0 grey;
               box-shadow: inset 0 -22px 0 0 grey;
       color: white; }
-  .social .fb {
+  .header__social .header__social--telephone-facebook {
     color: #4c7ccc;
     position: relative;
     left: 10px;
@@ -57,7 +57,7 @@ html, body {
             box-shadow: inset 0 -1px 0 0 #4c7ccc;
     -webkit-transition: .2s;
     transition: .2s; }
-    .social .fb:hover {
+    .header__social .header__social--telephone-facebook:hover {
       -webkit-box-shadow: inset 0 -22px 0 0 #4c7ccc;
               box-shadow: inset 0 -22px 0 0 #4c7ccc;
       color: white; }
