@@ -43,8 +43,8 @@ html, body {
     left: 5px;
     -webkit-box-shadow: inset 0 -1px 0 0 grey;
             box-shadow: inset 0 -1px 0 0 grey;
-    -webkit-transition: .2s;
-    transition: .2s; }
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out; }
     .header__social .header__social--telephone-link:hover {
       -webkit-box-shadow: inset 0 -22px 0 0 grey;
               box-shadow: inset 0 -22px 0 0 grey;
@@ -55,8 +55,8 @@ html, body {
     left: 10px;
     -webkit-box-shadow: inset 0 -1px 0 0 #4c7ccc;
             box-shadow: inset 0 -1px 0 0 #4c7ccc;
-    -webkit-transition: .2s;
-    transition: .2s; }
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out; }
     .header__social .header__social--telephone-facebook:hover {
       -webkit-box-shadow: inset 0 -22px 0 0 #4c7ccc;
               box-shadow: inset 0 -22px 0 0 #4c7ccc;
@@ -66,7 +66,8 @@ html, body {
   padding-top: 95px;
   padding-left: 95px;
   padding-right: 115px;
-  font-weight: 800; }
+  font-weight: 800;
+  position: relative; }
   .header__navbar ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -79,10 +80,15 @@ html, body {
       font-size: 18px;
       text-align: center;
       line-height: 3px;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      -webkit-transition: .2s ease-in-out;
+      transition: .2s ease-in-out; }
       .header__navbar ul li a {
         text-decoration: none;
         color: white; }
+      .header__navbar ul li:hover {
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2); }
 
 .title {
   text-align: center;
@@ -90,7 +96,8 @@ html, body {
   margin-right: auto;
   margin-left: auto;
   width: 55%;
-  display: block; }
+  display: block;
+  position: relative; }
   .title h1 {
     font-size: 85px;
     position: relative;
@@ -104,7 +111,8 @@ html, body {
     color: white; }
 
 .image__title {
-  max-height: 175px; }
+  max-height: 175px;
+  position: relative; }
   .image__title .image__title-image {
     width: 100%;
     position: relative;
@@ -218,7 +226,7 @@ html, body {
       .activities__suggested .activities__suggested--squares:nth-child(3) h3 {
         padding-left: 25px;
         padding-right: 25px;
-        margin-top: 0px; }
+        margin-top: 0; }
     .activities__suggested .activities__suggested--squares .activities__suggested--squares-content {
       padding: 147px 20px 57px;
       margin: 10px;
@@ -226,13 +234,13 @@ html, body {
       .activities__suggested .activities__suggested--squares .activities__suggested--squares-content h3 {
         margin-left: 50px;
         margin-right: 50px;
-        transition: -webkit-transform .2s; }
+        transition: -webkit-transform .2s ease-in-out; }
       .activities__suggested .activities__suggested--squares .activities__suggested--squares-content:nth-child(3) {
         padding-top: 100px; }
       .activities__suggested .activities__suggested--squares .activities__suggested--squares-content p {
         visibility: hidden;
         opacity: 0;
-        transition: opacity .2s, visibility .2s, -webkit-transform .2s;
+        transition: opacity .2s, visibility .2s, -webkit-transform .2s ease-in-out;
         font-size: 15px;
         padding-left: 23px;
         padding-right: 23px; }
@@ -263,7 +271,7 @@ html, body {
       margin: 10px;
       border: 2px solid #2aaaa5; }
       .activities__suggested .activities__suggested--rectangle-1 .activities__suggested--rectangle-content h3, .activities__suggested .activities__suggested--rectangle-2 .activities__suggested--rectangle-content h3 {
-        transition: -webkit-transform .2s; }
+        transition: -webkit-transform .2s ease-in-out; }
       .activities__suggested .activities__suggested--rectangle-1 .activities__suggested--rectangle-content p, .activities__suggested .activities__suggested--rectangle-2 .activities__suggested--rectangle-content p {
         font-size: 15px;
         visibility: hidden;
@@ -370,8 +378,8 @@ html, body {
       width: 210px;
       border-radius: 35px;
       cursor: pointer;
-      -webkit-transition-duration: 0.2s;
-              transition-duration: 0.2s; }
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out; }
     .guide .guide--content a :hover {
       background-color: #e18b3b;
       -webkit-transform: scale(1.1);
@@ -441,8 +449,8 @@ footer {
         color: white;
         -webkit-box-shadow: inset 0 -2px 0 0 #737373;
                 box-shadow: inset 0 -2px 0 0 #737373;
-        -webkit-transition: .2s;
-        transition: .2s; }
+        -webkit-transition: .2s ease-in-out;
+        transition: .2s ease-in-out; }
         footer nav ul a:hover {
           -webkit-box-shadow: inset 0 -22px 0 0 #737373;
                   box-shadow: inset 0 -22px 0 0 #737373; }
